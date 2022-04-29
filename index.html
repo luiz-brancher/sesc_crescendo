@@ -7,9 +7,15 @@
     <title>SESC - Crescendo com Saúde</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="preloader">
+    <div class="anim"></div>
+    <h1>Aguarde enquanto o conteúdo é carregado.</h1>
+  </div>
   <!-- Scroll to Top -->
   <div id="stop" class="scrollTop">
     <span><a class="btn-stop" href="">
@@ -24,6 +30,7 @@
         </div>
         <div class="col-lg-6 col-xs-12 col-text">
           <h1>Crescendo<br><b>com saúde</b></h1>
+          <img id="img-bola" class="rellax" data-rellax-speed="3" data-rellax-zindex="10" src="img/tela_inicial_bola.png" alt="">
         </div>
         <button title="Iniciar" class="inicio">
           
@@ -32,7 +39,7 @@
   </div>
     <div class="container-fluid" id="tela02">
         <div class="container">
-            <div class="row">
+            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="300" class="row">
                 <div id="figura-container" class="col-lg-5 col-xs-12">
                     <img id="figura-1" src="img/elemento_titulo.png" alt="">
                 </div>
@@ -256,10 +263,13 @@
                       <p>Clique ou toque para assistir ao vídeo.</p>
                       <video src=""></video>
                     </div>
-
+                    <br>
                     <p>Preparamos dois <em>e-books</em> para auxiliá-lo em suas aulas. Se preferir, você também poderá fazer o <em>download</em> de cada um deles.</p>
 
-                    <h4>!! botoes pdf</h4>
+                    <div class="btn-container">
+                      <a target="_blank" id="pdf-1" href="img/pdf1_escolhas_saudaveis.pdf"></a>
+                      <a target="_blank" id="pdf-2" href="img/pdf2_atividades.pdf"></a>
+                    </div>
 
                     <hr>
                     <h3>Referências:</h3>
@@ -270,14 +280,39 @@
         <div id="conteudo-familia" class="container conteudo">
             <div class="row">
                 <div class="col-lg-12">
-                  <h2 class="mt-0">CENÁRIO DA OBESIDADE INFANTIL</h2>
-                  <hr>
-                  
+                  <div class="hidden-xs">
+                    <h2 class="mt-0">CENÁRIO DA OBESIDADE INFANTIL</h2>
+                    <hr>
+                    
+                      <div class="row video-row">
+                        <div class="video-container">
+                          <div class="video-texto">
+                            <h3>Obesidade no mundo e no Brasil</h3>
+                            <p>Obesidade infantil: um dos desafios da saúde pública do século XXI. Confira o cenário atual desta epidemia.</p>
+                            <p>Clique ou toque para assistir ao vídeo.</p>
+                          </div>
+                          <video src=""></video>
+                        </div>
+      
+                        <div class="video-container">
+                          <div class="video-texto">
+                            <h3>Atualidade, como mudar?</h3>
+                            <p>Pequenas mudanças para grandes transformações no cenário da obesidade infantil.</p>
+                            <p>Clique ou toque para assistir ao vídeo.</p>
+                          </div>
+                          <video src=""></video>
+                        </div>
+                      </div>
+                    
+  
+                    <h2>FATORES DA OBESIDADE COMPLEXA E MULTIFATORIAL</h2>
+                    <hr>
                     <div class="row video-row">
                       <div class="video-container">
                         <div class="video-texto">
-                          <h3>Obesidade no mundo e no Brasil</h3>
-                          <p>Obesidade infantil: um dos desafios da saúde pública do século XXI. Confira o cenário atual desta epidemia.</p>
+                          <h3 class="title-h">Ambientes “obesogênicos” e sedentarismo</h3>
+                          <p>Fatores externos e suas influências no cotidiano sedentário</p>
+                          <br>
                           <p>Clique ou toque para assistir ao vídeo.</p>
                         </div>
                         <video src=""></video>
@@ -285,169 +320,363 @@
     
                       <div class="video-container">
                         <div class="video-texto">
-                          <h3>Atualidade, como mudar?</h3>
-                          <p>Pequenas mudanças para grandes transformações no cenário da obesidade infantil.</p>
+                          <h3>Alimentos pouco saudáveis e o acesso a comidas industrializadas</h3>
+                          <p>A falta de acesso a alimentos saudáveis e a facilidade das comidas industrializadas: uma combinação perigosa</p>
+                          <p>Clique ou toque para assistir ao vídeo.</p>
+                        </div>
+                        <video src=""></video>
+                      </div>
+    
+                      <div class="video-container">
+                        <div class="video-texto">
+                          <h3>Extensa jornada de trabalho dos pais e aleitamento materno</h3>
+                          <p>A rotina dos pais e sua influência no crescimento saudável</p>
+                          <p>Clique ou toque para assistir ao vídeo.</p>
+                        </div>
+                        <video src=""></video>
+                      </div>
+    
+                      <div class="video-container">
+                        <div class="video-texto">
+                          <h3 class="title-h">Publicidade direcionada</h3>
+                          <p>A intervenção da publicidade na escolha dos alimentos</p>
                           <p>Clique ou toque para assistir ao vídeo.</p>
                         </div>
                         <video src=""></video>
                       </div>
                     </div>
-                  
-
-                  <h2>FATORES DA OBESIDADE COMPLEXA E MULTIFATORIAL</h2>
-                  <hr>
-                  <div class="row video-row">
-                    <div class="video-container">
-                      <div class="video-texto">
-                        <h3 class="title-h">Ambientes “obesogênicos” e sedentarismo</h3>
-                        <p>Fatores externos e suas influências no cotidiano sedentário</p>
-                        <br>
-                        <p>Clique ou toque para assistir ao vídeo.</p>
+  
+                    <h2>DESFECHOS E IMPACTOS DA OBESIDADE NA SAÚDE</h2>
+                    <hr>
+                    <div class="row video-row">
+                      <div class="video-container">
+                        
+                          <h3>Doenças crônicas e complicações físicas</h3>
+                          <p>A obesidade infantil e o impacto no corpo</p>
+                        
+                        <video src=""></video>
                       </div>
-                      <video src=""></video>
+    
+                      <div class="video-container">
+                        
+                          <h3>Problemas sociais e seus impactos</h3>
+                          <p>A obesidade infantil e o impacto na mente</p>
+                        
+                        <video src=""></video>
+                      </div>
                     </div>
   
-                    <div class="video-container">
-                      <div class="video-texto">
-                        <h3>Alimentos pouco saudáveis e o acesso a comidas industrializadas</h3>
-                        <p>A falta de acesso a alimentos saudáveis e a facilidade das comidas industrializadas: uma combinação perigosa</p>
-                        <p>Clique ou toque para assistir ao vídeo.</p>
+                    <h2>PREVENÇÃO E TRATAMENTO</h2>
+                    <hr>
+                    <div class="row video-row">
+                      <div class="video-container">
+                        <h3 class="title-h">Alimentação saudável: onde começa?</h3>
+                        <p>As mudanças no prato e as transformações saudáveis</p>
+                        <video src=""></video>
                       </div>
-                      <video src=""></video>
+    
+                      <div class="video-container">
+                        <h3>Alimentação saudável e as categorias dos alimentos</h3>
+                        <p>As categorias dos alimentos e a qualidade de suas refeições</p>
+                        <video src=""></video>
+                      </div>
+    
+                      <div class="video-container">
+                        <h3 class="title-h">Alimentação saudável: monte seu prato</h3>
+                        <p>Passo a passo de como montar um prato colorido, diverso e saudável</p>
+                        <video src=""></video>
+                      </div>
+    
+                      <div class="video-container">
+                        <h3>Alimentação saudável: preserve seus alimentos</h3>
+                        <p>Dicas de como preservar seus alimentos e mantê-los frescos por mais tempo</p>
+                        <video src=""></video>
+                      </div>
+    
+                      <div class="video-container">
+                        <h3>Alimentação saudável: manipulação segura</h3>
+                        <p>Dicas de como manipular corretamente os alimentos e mantê-los seguros</p>
+                        <video src=""></video>
+                      </div>
+    
+                      <div class="video-container">
+                        <h3>Alimentação saudável: atenção aos rótulos</h3>
+                        <p>Dicas de como entender os rótulos e conhecer os alimentos que você compra</p>
+                        <video src=""></video>
+                      </div>
                     </div>
   
-                    <div class="video-container">
-                      <div class="video-texto">
-                        <h3>Extensa jornada de trabalho dos pais e aleitamento materno</h3>
-                        <p>A rotina dos pais e sua influência no crescimento saudável</p>
-                        <p>Clique ou toque para assistir ao vídeo.</p>
+                    <h2>O ATO DE COMER</h2>
+                    <hr>
+                    <div class="row video-row">
+                      <div class="video-container">
+                        <h3>Regularidade e atenção</h3>
+                        <p>A importância de comer com regularidade e atenção</p>
+                        <video src=""></video>
                       </div>
-                      <video src=""></video>
+    
+                      <div class="video-container">
+                        <h3>Escolha o ambiente</h3>
+                        <p>A importância do ambiente na hora de comer</p>
+                        <video src=""></video>
+                      </div>
+    
+                      <div class="video-container">
+                        <h3>Escolha a companhia</h3>
+                        <p>A importância da companhia na hora de comer</p>
+                        <video src=""></video>
+                      </div>
                     </div>
   
-                    <div class="video-container">
-                      <div class="video-texto">
-                        <h3 class="title-h">Publicidade direcionada</h3>
-                        <p>A intervenção da publicidade na escolha dos alimentos</p>
-                        <p>Clique ou toque para assistir ao vídeo.</p>
+                    <h2>CRESCENDO FELIZ!</h2>
+                    <hr>
+                    <div class="row video-row">
+                      <div class="video-container">
+                        <h3>Rotina na alimentação</h3>
+                        <p>A rotina como fator essencial para a alimentação saudável</p>
+                        <video src=""></video>
                       </div>
-                      <video src=""></video>
+    
+                      <div class="video-container">
+                        <h3>Pratos coloridos</h3>
+                        <p>Pratos coloridos e saúde de qualidade</p>
+                        <video src=""></video>
+                      </div>
+    
+                      <div class="video-container">
+                        <h3 class="title-h">Xô, sedentarismo!</h3>
+                        <p>A rotina como fator essencial para a alimentação saudável</p>
+                        <video src=""></video>
+                      </div>
+    
+                      <div class="video-container">
+                        <h3>Fechamento da imersão das “Dicas crescendo com saúde”</h3>
+                        <p>A importância do exercício físico no combate à obesidade</p>
+                        <video src=""></video>
+                      </div>
                     </div>
                   </div>
 
-                  <h2>DESFECHOS E IMPACTOS DA OBESIDADE NA SAÚDE</h2>
-                  <hr>
-                  <div class="row video-row">
-                    <div class="video-container">
-                      
-                        <h3>Doenças crônicas e complicações físicas</h3>
-                        <p>A obesidade infantil e o impacto no corpo</p>
-                      
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      
-                        <h3>Problemas sociais e seus impactos</h3>
-                        <p>A obesidade infantil e o impacto na mente</p>
-                      
-                      <video src=""></video>
-                    </div>
-                  </div>
-
-                  <h2>PREVENÇÃO E TRATAMENTO</h2>
-                  <hr>
-                  <div class="row video-row">
-                    <div class="video-container">
-                      <h3 class="title-h">Alimentação saudável: onde começa?</h3>
-                      <p>As mudanças no prato e as transformações saudáveis</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3>Alimentação saudável e as categorias dos alimentos</h3>
-                      <p>As categorias dos alimentos e a qualidade de suas refeições</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3 class="title-h">Alimentação saudável: monte seu prato</h3>
-                      <p>Passo a passo de como montar um prato colorido, diverso e saudável</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3>Alimentação saudável: preserve seus alimentos</h3>
-                      <p>Dicas de como preservar seus alimentos e mantê-los frescos por mais tempo</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3>Alimentação saudável: manipulação segura</h3>
-                      <p>Dicas de como manipular corretamente os alimentos e mantê-los seguros</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3>Alimentação saudável: atenção aos rótulos</h3>
-                      <p>Dicas de como entender os rótulos e conhecer os alimentos que você compra</p>
-                      <video src=""></video>
-                    </div>
-                  </div>
-
-                  <h2>O ATO DE COMER</h2>
-                  <hr>
-                  <div class="row video-row">
-                    <div class="video-container">
-                      <h3>Regularidade e atenção</h3>
-                      <p>A importância de comer com regularidade e atenção</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3>Escolha o ambiente</h3>
-                      <p>A importância do ambiente na hora de comer</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3>Escolha a companhia</h3>
-                      <p>A importância da companhia na hora de comer</p>
-                      <video src=""></video>
-                    </div>
-                  </div>
-
-                  <h2>CRESCENDO FELIZ!</h2>
-                  <hr>
-                  <div class="row video-row">
-                    <div class="video-container">
-                      <h3>Rotina na alimentação</h3>
-                      <p>A rotina como fator essencial para a alimentação saudável</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3>Pratos coloridos</h3>
-                      <p>Pratos coloridos e saúde de qualidade</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3 class="title-h">Xô, sedentarismo!</h3>
-                      <p>A rotina como fator essencial para a alimentação saudável</p>
-                      <video src=""></video>
-                    </div>
-  
-                    <div class="video-container">
-                      <h3>Fechamento da imersão das “Dicas crescendo com saúde”</h3>
-                      <p>A importância do exercício físico no combate à obesidade</p>
-                      <video src=""></video>
+                  <div class="hidden-lg">
+                    <br>
+                    <p>Clique ou toque nos títulos para assistir aos vídeos.</p>
+                    <div class="accordion accordion-flush" id="accordionMobile">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            CENÁRIO DA OBESIDADE INFANTIL
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="video-container">
+                              <div class="video-texto">
+                                <h3>Obesidade no mundo e no Brasil</h3>
+                                <p>Obesidade infantil: um dos desafios da saúde pública do século XXI. Confira o cenário atual desta epidemia.</p>
+                                <p>Clique ou toque para assistir ao vídeo.</p>
+                              </div>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <div class="video-texto">
+                                <h3>Atualidade, como mudar?</h3>
+                                <p>Pequenas mudanças para grandes transformações no cenário da obesidade infantil.</p>
+                                <p>Clique ou toque para assistir ao vídeo.</p>
+                              </div>
+                              <video src=""></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            FATORES DA OBESIDADE COMPLEXA E MULTIFATORIAL
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="video-container">
+                              <div class="video-texto">
+                                <h3 class="title-h">Ambientes “obesogênicos” e sedentarismo</h3>
+                                <p>Fatores externos e suas influências no cotidiano sedentário</p>
+                                <br>
+                                <p>Clique ou toque para assistir ao vídeo.</p>
+                              </div>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <div class="video-texto">
+                                <h3>Alimentos pouco saudáveis e o acesso a comidas industrializadas</h3>
+                                <p>A falta de acesso a alimentos saudáveis e a facilidade das comidas industrializadas: uma combinação perigosa</p>
+                                <p>Clique ou toque para assistir ao vídeo.</p>
+                              </div>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <div class="video-texto">
+                                <h3>Extensa jornada de trabalho dos pais e aleitamento materno</h3>
+                                <p>A rotina dos pais e sua influência no crescimento saudável</p>
+                                <p>Clique ou toque para assistir ao vídeo.</p>
+                              </div>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <div class="video-texto">
+                                <h3 class="title-h">Publicidade direcionada</h3>
+                                <p>A intervenção da publicidade na escolha dos alimentos</p>
+                                <p>Clique ou toque para assistir ao vídeo.</p>
+                              </div>
+                              <video src=""></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            DESFECHOS E IMPACTOS DA OBESIDADE NA SAÚDE
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="video-container">
+                          
+                              <h3>Doenças crônicas e complicações físicas</h3>
+                              <p>A obesidade infantil e o impacto no corpo</p>
+                            
+                            <video src=""></video>
+                          </div>
+        
+                          <div class="video-container">
+                            
+                              <h3>Problemas sociais e seus impactos</h3>
+                              <p>A obesidade infantil e o impacto na mente</p>
+                            
+                            <video src=""></video>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            PREVENÇÃO E TRATAMENTO
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="video-container">
+                              <h3 class="title-h">Alimentação saudável: onde começa?</h3>
+                              <p>As mudanças no prato e as transformações saudáveis</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3>Alimentação saudável e as categorias dos alimentos</h3>
+                              <p>As categorias dos alimentos e a qualidade de suas refeições</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3 class="title-h">Alimentação saudável: monte seu prato</h3>
+                              <p>Passo a passo de como montar um prato colorido, diverso e saudável</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3>Alimentação saudável: preserve seus alimentos</h3>
+                              <p>Dicas de como preservar seus alimentos e mantê-los frescos por mais tempo</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3>Alimentação saudável: manipulação segura</h3>
+                              <p>Dicas de como manipular corretamente os alimentos e mantê-los seguros</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3>Alimentação saudável: atenção aos rótulos</h3>
+                              <p>Dicas de como entender os rótulos e conhecer os alimentos que você compra</p>
+                              <video src=""></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            O ATO DE COMER
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="video-container">
+                              <h3>Regularidade e atenção</h3>
+                              <p>A importância de comer com regularidade e atenção</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3>Escolha o ambiente</h3>
+                              <p>A importância do ambiente na hora de comer</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3>Escolha a companhia</h3>
+                              <p>A importância da companhia na hora de comer</p>
+                              <video src=""></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            CRESCENDO FELIZ!
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="video-container">
+                              <h3>Rotina na alimentação</h3>
+                              <p>A rotina como fator essencial para a alimentação saudável</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3>Pratos coloridos</h3>
+                              <p>Pratos coloridos e saúde de qualidade</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3 class="title-h">Xô, sedentarismo!</h3>
+                              <p>A rotina como fator essencial para a alimentação saudável</p>
+                              <video src=""></video>
+                            </div>
+          
+                            <div class="video-container">
+                              <h3>Fechamento da imersão das “Dicas crescendo com saúde”</h3>
+                              <p>A importância do exercício físico no combate à obesidade</p>
+                              <video src=""></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   <div class="infografico">
+                    <img src="img/infografico_dez.png" alt="">
                     <h2>Dez dicas de alimentação e rotina saudáveis para a família</h2>
-                    <ul>
+                    <ol>
                       <li>Prefira alimentos frescos, in natura ou minimamente processados para a maioria das refeições diárias e limite o consumo de alimentos processados e ultraprocessados.</li>
                       <li>Planeje as refeições em família ou com amigos. Dedique a atenção, a presença e o carinho que esse momento merece.</li>
                       <li>Compartilhe e desenvolva habilidades culinárias. Prepare as refeições com óleos, gorduras, sal e açúcar em quantidades suficientes para conferir sabor, mas sem excessos.</li>
@@ -458,12 +687,15 @@
                       <li>Respeite a fome dos seus filhos: não os distraia para comer nem os prive de alimentos quando estiverem com fome. Os pais têm responsabilidade quanto à qualidade do alimento oferecido e ao local adequado para as refeições de seus filhos.</li>
                       <li>Reserve um tempo de qualidade para o lazer em família e esteja presente de fato; ria alto e brinque com prazer.</li>
                       <li>Reduza o seu tempo e o de seus filhos em frente às telas. Mantenham-se em movimento e com a prática de atividade física regular e prazerosa.</li>
-                    </ul>
+                    </ol>
                   </div>
 
                   <h2>MATERIAL COMPLEMENTAR</h2>
                   <p>Confira a seguir alguns materiais complementares para que você aprofunde seus conhecimentos, compartilhando-os também com as crianças.</p>
-
+                  <div class="btn-container">
+                    <a target="_blank" id="pdf-1" href="img/pdf1_escolhas_saudaveis.pdf"></a>
+                    <a target="_blank" id="pdf-2" href="img/pdf2_atividades.pdf"></a>
+                  </div>
                   <hr>
                   <h3>Referências:</h3>
                   <p>https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_<br class="hidden-lg">populacao_brasileira_2ed.pdf</p>
@@ -478,8 +710,14 @@
             </div>    
         </div>
     </div>
+    <div id="preload-1"></div><div id="preload-2"></div><div id="preload-3"></div><div id="preload-4"><div id="preload-5"></div></div>
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/rellax.min.js"></script>
+<script src="js/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="js/script.js"></script>
 </html>

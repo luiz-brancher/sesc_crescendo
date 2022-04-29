@@ -1,16 +1,18 @@
   // fadeOut do loader
 $(window).on("load", function() {
-    $(".loader-container").fadeOut("slow");
-    $("body").removeClass("loading");
-//     $(function() {
-//       $('.lazy').Lazy({
-//         onError: function(element) {
-//           console.log('error loading ' +element.data('src'));
-//         }
-//       });
-//   });
+    $('.preloader').fadeOut(300);
+
 });
 $('.conteudo').hide();
+
+ // Adding horizantal parallax scrolling
+ var rellax = new Rellax('.rellax', {
+    // Activate horizantal scrolling
+    // Turned off by default
+    horizontal: false,
+    //Deactivate vertical scrolling
+    vertical: true
+  });
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
