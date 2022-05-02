@@ -49,12 +49,24 @@ $(scrollTop).click(function() {
     return false;
 });
 
+//subir pagina ao expandir um painel
+$(".collapse").on("shown.bs.collapse", function () {
+    $("html, body").animate({ scrollTop: $(this).offset().top - 120 }, 200);
+  });
+
 //botao inicial
 $('.inicio').click(()=> {
     $('html, body').animate({
         scrollTop: $("#tela02").offset().top
     }, 1000);
 })
+
+$('.btn-conteudo').click(()=> {
+    $('html, body').animate({
+        scrollTop: $(".link-container").offset().top
+    }, 1000);
+})
+
 
 // links p o conteúdo
 $('#link-1').click(()=>{

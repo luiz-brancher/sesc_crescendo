@@ -14,6 +14,7 @@ body {
     font-family: 'Rubik';
     color: #000000;
     overflow-x: hidden;
+    background-color: #f3f0f1;
 }
 
 .scrollTop {
@@ -21,7 +22,6 @@ body {
     right: 20px;
     bottom: 20px;
     border-radius: 200px;
-    background-color: #2D2D2D;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,6 +32,10 @@ body {
     cursor: pointer;
     transition-duration: .2s;
     z-index: 100;
+    background-image: url('../img/btn_subir.png');
+    background-size: contain;
+    border: 1px solid rgb(155,155,155);
+    box-shadow: 1px 1px 2px rgb(55,55,55);
   }
 
 .scrollTop:hover {
@@ -72,10 +76,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .img-inicial {
-    height: 850px;
+    max-height: 100vh;
     margin-top: -50px;
     margin-left: 100px;
 }
@@ -87,7 +92,7 @@ body {
 #img-bola {
     position: absolute;
     left: 55%;
-    bottom: 22%;
+    
     animation: float 3s infinite;
 }
 
@@ -99,7 +104,8 @@ h1 {
     line-height: 1;
 }
 
-.conteudo h2 {
+.conteudo h2,
+.conteudo h3 {
     margin-top: 40px;
     margin-bottom: 10px;
 }
@@ -126,7 +132,25 @@ b {
     animation-iteration-count: infinite;
 }
 
-.inicio:hover {
+.btn-conteudo {
+    position: static;
+    background-image: url('../img/btn_inicio.png');
+    background-size: contain;
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 1px 1px 3px black;
+    transition-duration: .2s;
+    animation-name: btn-inicio;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    display: block;
+    margin: 15px auto;
+}
+
+.inicio:hover,
+.btn-conteudo:hover {
     transform: translateX(-50%) scale(1.1);
     transition-duration: .2s;
     animation-play-state: paused;
@@ -198,8 +222,8 @@ figcaption {
 }
 
 .link:hover {
-    transform: scale(1.07);
-    transition-duration: .3s;
+    transform: scale(1.03);
+    transition-duration: .2s;
 }
 
 #link-2 {
@@ -247,6 +271,13 @@ video {
     
 }
 
+.bg {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #ffffff;
+}
+
 .video-container {
     border: 1px solid #cecece;
     width: 49%;
@@ -254,7 +285,6 @@ video {
     padding: 10px 15px;
     border-radius: 5px;
     margin: 5px;
-    background-image: url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -314,6 +344,11 @@ video {
     position: relative;
 }
 
+.legenda {
+    width: 605px;
+    margin: 10px auto 20px auto;
+}
+
 .btn-tabela {
     width: 194px;
     position: absolute;
@@ -327,46 +362,46 @@ video {
     background-color: rgba(9, 75, 137, .6);
 }
 
-#btn-vEnergetico {
+.btn-vEnergetico {
     height: 74px;
     top: 200px;
 }
 
-#btn-carbs {
+.btn-carbs {
     top: 276px;
 }
 
-#btn-proteinas {
+.btn-proteinas {
     top: 312px;
 }
 
-#btn-g-totais {
+.btn-g-totais {
     top: 348px
 }
 
-#btn-g-sat {
+.btn-g-sat {
     top: 384px;
 }
 
-#btn-g-trans {
+.btn-g-trans {
     top: 420px;
 }
 
-#btn-fibra {
+.btn-fibra {
     top: 456px;
 }
 
-#btn-sodio {
+.btn-sodio {
     top: 492px;
 }
 
-#btn-porcao {
+.btn-porcao {
     top: 90px;
     left: 136px;
     width: 121px;
 }
 
-#btn-vd {
+.btn-vd {
     top: 140px;
     right: 9px;
     width: 163px;
@@ -374,7 +409,7 @@ video {
     left: unset;
 }
 
-#btn-mc {
+.btn-mc {
     top: 90px;
     left: 257px;
     width: 106px;
@@ -458,12 +493,80 @@ video {
     margin: 0;
 }
 
+.tabela-mobile {
+    margin: 10px auto;
+    display: none;    
+}
+
+.tabela-mobile button {
+    display: block;
+    margin: 10px auto;
+    height: 60px;
+    width: 225px;
+    background-color: #e85301;
+    color: white;
+    border: none;
+}
+
+.conteudo h2.titulo {
+    font-size: 32px;
+    margin-top: 16px;
+}
+
+
+@media (max-width:1000px){
+    .img-inicial {
+        width: 100%;
+    }
+    h1 {
+        margin: 50px auto;
+        text-align: center;
+    }
+    #img-bola {
+        animation: unset;
+        bottom: -100px;
+        right: 100px;
+        left: unset;
+    }
+    .btn-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hidden-md {
+        display: none;
+    }
+    .visible-md {
+        display: block;
+    }
+    #conteudo-familia .accordion-header {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #conteudo-familia .accordion-item {
+        margin-bottom: 0;
+    }
+    .conteudo .accordion {
+        width: 100%;
+    }
+    .video-container {
+        width: 100%;
+    }
+    .link {
+        height: 70vh;
+    }
+}
+
 @media (max-width: 650px) {
     .hidden-lg {
         display: block;
     }
     .hidden-xs {
         display: none;
+    }
+
+    .tabela-mobile {
+        display:block;
     }
 
     .conteudo {
@@ -475,6 +578,7 @@ video {
         height: auto;
         margin-top: 20px;
         margin-left: 0;
+        overflow: hidden;
     }
 
     h1 {
@@ -516,8 +620,9 @@ video {
     .video-container {
         width: 100%;
     }
-    #conteudo-familia h2 {
+    #conteudo-familia .accordion-header {
         margin-top: 0;
+        margin-bottom: 0;
     }
 
     .accordion-item {
@@ -541,7 +646,61 @@ video {
         animation-duration: 3s;
         animation-iteration-count: infinite;
     }
-
+    .legenda {
+        width: 100%;
+    }
+    #pdf-1,
+    #pdf-2 {
+        width: 100%;
+        background-size: contain;
+    }
+    .link-container {
+        flex-direction: column;
+    }
+    .link {
+        height: 33vh;
+        width: 100vw;
+        background-position: 0px -10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #link-2 {
+        background-position: 0px -95px;
+    }
+    #link-3 {
+        background-position: 0px -80px;
+    }
+    #link-1::before {
+        content: 'Educadores';
+        font-size: 36px;
+        color: white;
+        background-color: rgba(100, 100, 100, .3);
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #link-2::before {
+        content: 'Família';
+        font-size: 36px;
+        color: white;
+        background-color: rgba(100, 100, 100, .3);
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #link-3::before {
+        content: 'Crianças';
+        font-size: 36px;
+        color: white;
+        background-color: rgba(100, 100, 100, .3);
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
 
 @keyframes btn-inicio {
@@ -558,14 +717,14 @@ video {
 
 @keyframes float {
     0% {
-        bottom: 170px;
+        bottom: 70px;
     }
     50% {
-        bottom: 165px;
+        bottom: 65px;
         right: 12px;
     }
     100% {
-        bottom: 170px;
+        bottom: 70px;
     }
 }
 
