@@ -100,7 +100,7 @@ h1 {
     font-size: 70px;
     margin-top: 240px;
     margin-left: 140px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1;
 }
 
@@ -513,6 +513,14 @@ video {
     margin-top: 16px;
 }
 
+@media (max-width:1400px){
+    #img-bola {
+        animation: unset;
+        right: 45px;
+        bottom: 10px;
+        left: unset;
+    }
+}
 
 @media (max-width:1000px){
     .img-inicial {
