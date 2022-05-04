@@ -429,6 +429,7 @@ video {
     width: 80%;
     margin: 105px auto 15px auto;
     position: relative;
+    background-color: white;
 }
 
 .infografico img{
@@ -460,31 +461,33 @@ video {
     justify-content: center;
 }
 
-#pdf-1 {
+.pdf-1 {
     height: 236px;
     width: 388px;
     display: block;
     background-image: url('../img/bt_download_pdf1.png');
     background-repeat: no-repeat;
+    background-position: center;
     margin: 15px 25px;
     transform: scale(.9);
 }
 
-#pdf-2 {
+.pdf-2 {
     height: 236px;
     width: 388px;
     display: block;
     background-image: url('../img/bt_download_pdf2.png');
     background-repeat: no-repeat;
+    background-position: center;
     margin: 15px 25px;
     transform: scale(.9);
 }
 
-#pdf-1:hover {
+.pdf-1:hover {
     background-image: url('../img/bt_download_pdf1_h.png');
 }
 
-#pdf-2:hover {
+.pdf-2:hover {
     background-image: url('../img/bt_download_pdf2_h.png');
 }
 
@@ -508,9 +511,19 @@ video {
     border: none;
 }
 
+.accordion-item .video-container {
+    display: block;
+    margin: 5px auto;
+}
+
 .conteudo h2.titulo {
     font-size: 32px;
     margin-top: 16px;
+}
+
+#conteudo-familia .btn-container {
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width:1400px){
@@ -519,6 +532,13 @@ video {
         right: 45px;
         bottom: 10px;
         left: unset;
+    }
+}
+
+@media (max-width:1200px){
+    #conteudo-familia .video-container {
+        width: 80%;
+        margin: 15px auto;
     }
 }
 
@@ -613,6 +633,7 @@ video {
     .infografico {
         width: 100%;
         margin-top: 120px;
+        
     }
 
     .infografico img {
