@@ -80,9 +80,9 @@ body {
 }
 
 .img-inicial {
-    max-height: 100vh;
-    margin-top: -50px;
-    margin-left: 100px;
+    max-height: 95vh;
+    margin-top: 0;
+    /*margin-left: 100px;*/
 }
 
 .col-text {
